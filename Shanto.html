@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width. initial-scale=1.0">
+
+	<title> Shanto </title>
+	<!--title-icon----->
+<link rel="shortcut icon" href="https://i.postimg.cc/pLZQ2QHM/530-5304995-free-png-website-icons-website-icon-clipart-removebg-preview.png">
+
+<!--using-fontAwesome-->
+<script src="https://kit.fontawesome.com/f8808fb670.js" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+<style>
+	@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+*{
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #E1F5F4;
+}
+html{
+
+scroll-behavior: smooth;
+
+
+}
+
+
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#main{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-color: #edflfd;
+	position: relative;
+	justify-content: center;
+	align-content: center;
+	background-size: 550px;
+	background-position: right bottom;
+
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color: #f4f7ff;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+	z-index: 1;
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color: #6c707c;
+	font-size: 12px;
+}
+.lang{
+	color: #292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color: Black;
+	font-family: Courgette;
+}
+.menu li a:hover,
+.menu li a.active{
+	background-color: #292929;
+	color: #ffffff ! important;
+	font-weight: 700;
+	transition: all ease 0.4s;
+}
+.name{
+	font-family: Courgette;
+	width: 500px;
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(-20%,-50%);
+}
+.name p:nth-child(1),
+.name .details{
+	color: #6c707c;
+	font-size: 16px;
+	font-family: Knewave;
+}
+.name h1{
+	font-family: Lobster;
+	font-size: 40px;
+	margin: 0px;
+	letter-spacing: 3px;
+	color: #292929;
+	text-align: center;
+}
+.cv-btn{
+	width: 200px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #292929;
+	color: #ffffff;
+	font-family: Marko One;
+}
+.cv-btn:hover{
+	background-color: #131313;
+	transition: all ease 0.5s;
+}
+.name span{
+	color: red;
+	font-family: Lobster;
+}
+.social{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	display: flex;
+}
+.social a{
+	margin: 6px 12px;
+}
+.social i{
+	color: rgba(18,17,17,0.4);
+	font-size: 14px;
+}
+.social i:hover{
+	color: red;
+	transition: all ease 0.5s;
+}
+.arrow{
+	align-self: end;
+width: 0%;
+height: 15%;
+margin-bottom: 4em;
+position: absolute;
+bottom: 0px;
+left: -3%;
+border: 1px solid rgba(41,41,41,0.3);
+}
+.arrow::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 11px 11px 0px 11px;
+	border-color: #292929 transparent transparent transparent;
+right: -0.7em;
+bottom: -2px;
+}
+#about{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+}
+.about-text{
+	width: 50%;
+	font-family: Stint Ultra Condensed;
+}
+.about-text h1{
+	font-size: 5rem;
+	color: #17d1ac;
+	font-family: Open Sans Condensed
+;
+}
+.about-text h2{
+	font-size: 3rem;
+	color: red; 
+	font-weight: 400;
+}
+.about-text h1,h2{
+	margin: 0;
+	padding: 0;
+}
+.about-text p{
+	font-size: 1.2rem;
+	color: black;
+	
+	}
+
+.about-text button{
+	width: 180px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background-color: #17d1ac;
+}
+.about-text button:hover{
+	background-color: black;
+	color: #ffffff;
+	transition: all ease 0.3s;
+}
+.about-model img{
+
+filter: grayscale(50%);
+
+width: auto;
+height: 500px;
+
+}
+#services{
+	width: 100%;
+	height: 100vh;
+	font-family: calibri;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+}
+.s-heading h1{
+color: #292929;
+font-size: 3rem;
+margin: 0px;
+padding: 0px;
+}
+.s-heading p{
+color: gray;
+font-size: 1rem;
+margin: 0px;
+padding: 0px;
+}
+.s-heading{
+	text-align: center;
+	margin: 20px 0px;
+}
+.s-box{
+	background-color: #2b2b2b;
+	width: 350px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+position: relative;
+} 
+.s-b-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.s-b-img{
+	width: 100%;
+	height: 70%;
+}
+.s-b-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.s-b-text{
+	width: 100%;
+	height: 30%;
+	background-color: #1e1e1e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-b-text a{
+	margin: 0px;
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-family: ;
+	display: block;
+	display: -webkit-box;
+	max-width: 80%;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+
+}
+.s-type{
+	font-family: calibri;
+	color: #ffffff;
+	background-color: #151515;
+	padding: 10px 15px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 18px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.s-box:hover{
+	transform: translateY(-10px);
+	transition: all ease 0.3s;
+}
+.s-b-text a:hover{
+	color: rgba(255,255,255,0.50);
+}
+#contact-btn h1{
+font-size: 2rem;
+color: #1e1e1e;
+margin: 10px;
+padding: 5px;
+letter-spacing: 4px;
+border-bottom: 2px solid #1E1E1E;
+}
+#contact-btn{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background-color: #f4f7ff;
+	margin: 20px 0px;
+	box-sizing: border-box;
+	box-shadow: 2px 0px 20px rgba(0,0,0,0.4);
+
+}
+.toggle{
+	display: none;
+}
+#contact-btn a{
+	color: #ffffff;
+	font-size: 1rem;
+	font-family: ;
+	width: 150px;
+	height: 40px;
+	margin: 10px;
+	background-color: #1e1e1e;
+	box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contact-btn a:hover{
+	background-color: #17d1ac;
+	color: #000000;
+	transition: all ease 0.5s;
+	font-weight: 700;
+}
+#contact-form{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#contact-form form{
+	display: flex;
+	width: 70%;
+	height: 60vh;
+	background-color: #1a1a1a;
+	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+	border: 1px solid rgba(255,255,255,0.01);
+}
+.contact-left{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-right{
+	width: 60%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-left: 1px solid rgba(255,255,255,0.8);
+}
+.c-l-heading{
+	color: #ffffff;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+.f-email,.f-name{
+	display: flex;
+	flex-direction: column;
+
+}
+.f-email,
+.f-name{
+	color: #bfbfbf;
+	font-size: 22px;
+}
+.f-email input,
+.f-name input{
+	height: 30px;
+	width: 250px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid #929292;
+	color: #ffffff;
+	margin: 10px 0px;
+}
+.f-email input::placeholder,
+.f-name input::placeholder{
+	opacity: 0.5;
+	letter-spacing: 1px;
+}
+.f-email input:focus,
+.f-name input:focus{
+border-bottom: 1px solid #17d1ac;
+transition: all ease 0.5s;
+}
+.message font{
+	font-size: 18px;
+	color: #4e4e4e;
+	font-family: calibri;
+	
+}
+.message{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.contact-right textarea{
+	width: 100% !important;
+	height: 320px !important;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	box-sizing: border-box;
+	color: #ebebeb;
+	font-size: 16px;
+}
+.contact-right textarea::placeholder{
+	color: #ebebeb;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+.contact-right button{
+	
+	justify-content: center;
+	align-content: center;
+	
+	
+	
+	font-weight: bold;
+	
+	margin: 0px;
+	
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-left: 45%;
+
+}
+.contact-right button{
+	color: white;
+}
+@media only screen and (max-width: 1190px){
+	background-size:1150px;
+}
+	.name{
+	left: 10%;
+	top: 50%;
+	transform: translate(-10px,-50%);
+}
+.about-model img{
+	height: 400px;
+}
+#services{
+	height: auto;
+}
+.s-b-container{
+	flex-wrap: wrap;
+}
+.s-box{
+	flex-grow: 1;
+}
+.s-b-text{
+text-align: center;
+}
+#contact-form form{
+	width: 95% !important;
+}
+}
+@media only screen and (max-width: 970px){
+	#main{
+		background-image: none;
+	}
+	.name{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.about-model{
+		display: none;
+	}
+	#about{
+		justify-content: center;
+		padding-top: 0px;
+	}
+	.about-text{
+		width: 90%;
+	}
+	.about-text h1{
+		font-size: 4rem;
+	}
+	.p-b-container{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 900px){
+.toggle{
+	display: block;
+}
+.toggle:before{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	line-height: 0px;
+	margin: -35;
+}
+.toggle.active:before{
+	content: '\f00d';
+}
+nav{
+	padding: 10px 30px;
+}
+nav ul{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	background-color: #0f0f0f;
+	top: 50px;
+	left: 0;
+	transition: 0.5s;
+	overflow: hidden;
+	border: 3px solid #1f1f1f;
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+}
+.p-b-container{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	height: auto;
+	grid-gap: 10px;
+}
+#contact-btn h1{
+	font-size: 1.4rem;
+	text-align: center;
+}
+#contact-form{
+	padding: 20px;
+	height: auto;
+	box-sizing: border-box;
+}
+#contact-form form{
+	flex-direction: column;
+	height: auto;
+	padding: 20px;
+	width: 90% !important;
+	}
+.contact-left,
+.contact-right{
+	width: 100%;
+	border: none;
+
+}
+.f-email,
+.f-name{
+	width: 100%;
+}
+.f-email input,
+.f-name input{
+	width: 100%;
+	border: none;
+	background-color: #262626 !important;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	height: 40px;
+}
+.textarea{
+	background-color: #262626 !important;
+	margin: 10px 0px;
+	padding: 10px;
+	height: 200px !important;
+	width: 100% !important;
+}
+#contact-form form h1{
+	margin: 5px 0px;
+}
+}
+@media only screen and (max-width: 800px){
+	#contact-btn h1{
+		font-size: 1.2rem;
+		margin: 0px 10%;
+	}
+	.name{
+		width: 60px;
+	}
+	.about-text h1{
+font-size: 30px;
+	}
+	.about-text h2{
+		font-size: 20px;
+	}
+	.about-text p{
+		font-size: 15px;
+		display: flex;
+	}
+	.about .about-model img{
+		width: 20px;
+	}
+	.name h1{
+		font-size: 20px;
+		text-align: center;
+	}
+	.menu{
+		position: fixed !important;
+	}
+	.name h1{
+		display: flex;
+		margin: 60px;
+		margin-top: -20px;
+		width: 300px;
+		text-align: center;
+		font-size: 20px !important;
+		margin-left: 10px;
+
+	}
+	.name .details {
+		display: flex;
+		box-sizing: border-box;
+		font-size: 8px;
+	width: 300px;
+margin: 45px;
+	padding: 50px;
+	margin-top: -80px;
+	padding-top: -200px;
+
+	}
+	.social {
+
+padding: 130px;
+margin-left: 40px;
+		}
+		.name .sumiya{
+			margin-top: 80px;
+		}
+.cv-btn {
+	margin: 40px;
+border-radius: 10px;
+height: 25px;
+width: 100px;
+font-weight: bold;
+font-size: 10px;
+margin-top: -70px;
+justify-content: center;
+align-items: center;
+}
+		.about-model img{
+width: 200px;
+height: 220px;
+margin-top: -300px;
+padding-top: 300px;
+		}
+		.about-text p{
+			font-size: 15px;
+			display: flex;
+			width: -400px;
+			text-align: center;
+			justify-content: center;
+			box-sizing: border-box;
+			
+
+		}
+		.about .love button{
+			font-size: 5px;
+			background: none;
+		}
+		.about-text h1{
+			font-size: 80px;
+			display: flex;
+			width: 300px;
+			text-align: center;
+			box-sizing: border-box;
+			margin-left: 40px;
+		}
+		.about-text h2{
+			text-align: center;
+			margin-left: -5px;
+			width: 300px;
+		}
+		.s-box{
+			width: 200px;
+			display: block;
+		}
+		.menu a{
+			margin-left: -5px;
+			display: flex;
+		}
+.s-heading{
+	display: flex;
+	width: 30px;
+}
+		.s-heading p{
+	font-size: 10px;
+	display: flex;
+margin-left: -1000px;
+padding: 50px;
+flex-direction: column;
+box-sizing: border-box;
+text-align: center;
+}
+.contact-right button{
+	background-color: black !important;
+	color: white !important;
+}
+}
+@media only screen and (max-width: 400px){
+	.name h1{
+		text-align: center;
+		font-size: 20px;
+	}
+	.menu{
+		position: fixed !important;
+	}
+	.body{
+		background-color: blue;
+	}
+}
+
+.contact-right button{
+	color: black;
+	width: 120px ;
+	height: 120px !important;
+	background-color: black;
+	font-size: 20px;
+border-radius: 10px;
+background: none;
+box-sizing: border-box;
+border-color: gray;
+
+}
+.sumiya {
+	text-align: center !important;
+}
+.contact-right button:hover{
+	background-color: red;
+	transition: 0.5s;
+}
+
+.contact-right .submit{
+	background-color: black
+}
+
+footer{
+	position: ;
+
+	width: 100%;
+	background: black;
+	height: 200px;
+}
+
+footer .color{
+color: white;
+}
+.color h1{
+	font-size: 25px;
+	margin: 80px;
+	padding-top: 15px;
+}
+.color img{
+	width: 30px;
+	
+
+}
+.color .sos{
+	width: 50px;
+}
+.ay{
+	color: #686868;
+	background: #343a40;
+	text-align: center;
+}
+</style>
+
+<body>
+<!--main-->
+<section id="main">
+<!--navigation-->
+<nav>
+	<!--logo-->
+	<a href="#" class="logo"> Shanto </a>
+<!--bar-icon--->
+<div class="toggle"></div>
+<!--menu-->
+<ul class="menu">
+
+<li><a href="#main" class="active">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services"> Ability </a></li>
+
+<li><a href="#contact-form"> Contact </a></li>
+</ul>
+<!--language-->
+<a href="#" class="lang">En</a>
+
+
+</nav>
+	<!---name-->
+	<div class="name"> 
+<!--hello-->
+<div class="sumiya">
+<p> Hello </p>
+</div>
+<!--name-->
+<h1> it's <span>Shahid</span> Ahmed Shanto</h1>
+
+<!--details-->
+<p class="details">
+
+Hallo. I am Shanto I Am a web designer . 
+
+	</p>
+	<!--cv-btn-->
+<a href="https://ufile.io/k6zvl71t" class="cv-btn">Download CV</a>
+
+	</div>
+<!--social-->
+<div class="social">
+<a href="https://www.facebook.com/ayrinshanto22"><i class="fab fa-facebook-f"> </i></a>
+<a href="https://www.instagram.com/shahid_ahmed_shanto/"><i class="fab fa-instagram"> </i></a>
+<a href="https://www.youtube.com/channel/UCv_Q1IHuUNXQkrV7lyKYLGQ"><i class="fab fa-youtube"> </i></a>
+</div>
+<!--arrow-->
+<div class="arrow"></div>
+
+</section>
+
+<!--about-section-->
+
+<section id="about">
+
+	<!--text-->
+	<div class="about-text">
+<h1> About Us   </h1>
+<h2> Web designer   </h2>
+<p>  Hallo. I am Shanto I Am a full-time web designer. I am Expart on Html CSS JavaScript.
+I Have also a lot of experience with Html CSS JS programming language. I love to Code and design awesome Website.
+i can work on my PC For 12 hours without rest.The world..... hire me and get the best results on your any Web design Project.</p>
+<!--btn-->
+<button class="love">More Details</button>
+
+
+	 </div>
+<!--about-model-img-->
+<div class="about-model"> 
+
+<img src="https://i.postimg.cc/ZYjQRQhW/DIJITAL-89257.jpg" alt="model">
+</div>
+</section>
+<!--services-->
+ <section id="services">
+ 	<!----services-heading-->
+<div class="s-heading">
+	
+<h1>Ability</h1></br>
+<p> i have a lot Ability. i show You my 3 Ability</p>
+</div>
+<!--services-box-container-->
+
+<div class="s-b-container">
+<!--box-1---->
+<div class="s-box">
+<!--services-box-img--->
+
+<div class="s-b-img">
+<!---type--->
+<div class="s-type">HTML</div>
+<!--img-->
+
+<img src="https://i.postimg.cc/YCNzLTn8/What-is-HTML-and-how-to-learn-it-The-complete-guide-on-HTML-basics.jpg">
+
+
+
+	</div>
+
+<!--services-box-text-->
+<div class="s-b-text">
+	<a href="#"> I am Expart on Html. i design awesome Website. i love html code and i can work on my PC For 12 hours without rest. </a>
+
+
+</div>
+
+
+
+
+	</div>
+<!--box-2-->
+
+<div class="s-box">
+
+<div class="s-b-img">
+<!---type--->
+<div class="s-type">CSS</div>
+<!--img-->
+
+<img src="https://i.postimg.cc/G2xzDtcM/hero.png">
+
+
+
+	</div>
+
+<!--services-box-text-->
+<div class="s-b-text">
+	<a href="#"> I am Expart on CSS. I use beautiful color and style in websites</a>
+
+</div>
+</div>
+
+<!--box-3-->
+
+<div class="s-box">
+
+<div class="s-b-img">
+<!---type--->
+<div class="s-type">JAVA-SCRIPT</div>
+<!--img-->
+
+<img src="https://i.postimg.cc/C118Jskf/javascript.png">
+
+
+
+	</div>
+
+<!--services-box-text-->
+<div class="s-b-text">
+	<a href="#">i love use JAVA-SCRIPT codes On Websites </a>
+
+</div>
+</div>
+</div>
+ </div>
+ </section>
+<!--contact-btn-->
+<section id="contact-btn">
+	<!--heading-->
+	<h1>If You Have Any Project In Your Mind ?</h1>
+<!--btn-->
+<a href="#contact-form"> Contact Me </a>
+</section>
+
+<!--contact-form-->
+<section id="contact-form">
+ <form>
+ 	<!--left--->
+<div class="contact-left">  
+<!--heading-->
+<h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ed98b;">Writ</font>e Us</h1>
+
+<!--form-name-->
+
+
+<div class="f-name">
+<!--name-->
+<font>Name</font>
+<!--input-->
+<input type="text" placeholder="Full Name">
+
+  </div>
+
+<!--form-email-->
+
+  <div class="f-email">
+<!--name-->
+<font>Email</font>
+<!--input-->
+<input type="email" placeholder="Example@gmail.com">
+  </div>
+ </div>
+
+
+
+<!---right-->
+<div class="contact-right"> 
+<!--message-->
+
+<div class="message">
+<font> Message </font>
+<textarea name="message" row="5" cols="20" placeholder="Write message..."></textarea>
+
+</div>
+<!--submit-->
+
+<button onclick="love()">Send</button>
+
+</div>
+
+ </form>
+</section>
+
+<!--jquery-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--For Change Bar Icon to "X"-->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.toggle').click(function(){
+$('.toggle').toggleclass('active')
+$('nav ul').toggleclass('active-menu')
+		})
+	})
+
+
+
+
+</script>
+
+<script>
+	function love(){
+		swal({
+  title: "Thanks You",
+  text: "Your Message send successful",
+  icon: "success",
+  button: "Ok",
+});
+	}
+</script>
+<div class="ay">
+
+&copy; Designed BY Mohammad Shanto
+
+</div>
+</body>
+</html>
